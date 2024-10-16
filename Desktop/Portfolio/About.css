@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-color: #071E2E;
+    --secondary-color: #03ADEA;
+}
+
+body {
+    background-color: var(--main-color);
+    color: white;
+    font-family: sans-serif;
+}
+
+header {
+    margin-bottom: 64px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.Main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btnLight {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 8px 12px;
+    border: 1px solid transparent;
+}
+
+.btnLight {
+    background-color: var(--secondary-color);
+}
+
+
+.btn-container {
+    margin-top: 64px;
+    display: flex;
+    gap: 10px;
+}
+
+.btnLight {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 10px 12px;
+    border: 1px solid transparent;
+}
+
+.btnLight:hover{
+    transition: all 0.9s;
+    background-color: #071E2E;
+    cursor: pointer;
+}
+
+.title {
+    font-size: 40px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.BigText {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 20px;
+
+}
+
+.UBigText {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.Categories {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.textside {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+
+.MyImg {
+    width: 400px;
+    height: 500px;
+}
+
+.BigUText p{
+    line-height: 40px;
+}
+
+.Expriencet:hover{
+    transition: all 0.9s;
+    background-color: #03ADEA;
+    cursor: pointer;
+}
+
+.experience-text:hover{
+    transition: all 0.9s;
+    background-color: #03ADEA;
+    cursor: pointer;
+}
+
+/* CSS code to modify font size for the experience text */
+
+.experience-title {
+    font-size: 2rem; /* Adjusts the font size of titles like 'Web Developer' and 'Web Developer Intern' */
+}
+
+.experience-item-text {
+    font-size: 1.2rem; /* Adjusts the font size of paragraphs within the experience section */
+}
+
+/* Additional customization options */
+.experience-text {
+    line-height: 1.8; /* Improves readability by adjusting the line height */
+}
+
+@media (max-width: 768px) {
+    .experience-title {
+        font-size: 1.5rem; /* Reduces font size for smaller screens */
+    }
+
+    .experience-item-text {
+        font-size: 1rem; /* Reduces font size for paragraphs on smaller screens */
+    }
+}
+
+.Expriencet {
+    font-size: 2rem; /* Corrected spacing issue */
+    font-weight: bold;
+}
+
+/* Styling for the container holding experience items */
+.experience-items {
+    position: relative;
+    padding-left: 40px; /* Space for the timeline line */
+}
+
+/* Styling for the vertical line */
+.experience-items::before {
+    content: '';
+    position: absolute;
+    left: 20px; /* Adjust to align with circles */
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background-color: #03ADEA; /* The color of the line */
+}
+
+/* Styling for the circles */
+.experience-icon .circle {
+    width: 12px;
+    height: 12px;
+    background-color: #03ADEA; /* Color of the circles */
+    border-radius: 50%;
+    position: absolute;
+    left: 12px; /* Adjust to align with the line */
+    top: 0; /* Position at the top of the item */
+    transform: translateY(50%);
+}
+
+/* Style for each experience item to create space along the timeline */
+.experience-item {
+    position: relative;
+    margin-bottom: 40px; /* Space between items */
+}
+
+.experience-text {
+    margin-left: 40px; /* Aligns the text with enough space from the line and circle */
+}

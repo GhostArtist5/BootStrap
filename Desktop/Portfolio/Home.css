@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-color: #071E2E;
+    --secondary-color: #03ADEA;
+}
+
+body {
+    background-color: var(--main-color);
+    color: white;
+    font-family: sans-serif;
+}
+
+header {
+    margin-bottom: 64px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.Main {
+    display: flex;
+    justify-content: space-between;
+
+   
+}
+
+.btn {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 8px 12px;
+    border: 1px solid transparent;
+}
+
+.btnLight {
+    background-color: var(--secondary-color);
+}
+
+
+.btn-container {
+    margin-top: 64px;
+    display: flex;
+    gap: 10px;
+}
+
+.btnLight:hover{
+    transition: all 0.9s;
+    background-color: #071E2E;
+    cursor: pointer;
+}
+
+.btnLight {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 8px 12px;
+    border: 1px solid transparent;
+}
+
+.btnLight :hover {
+    transition: all 0.9s;
+    cursor: pointer;
+    background-color: #071E2E;
+}
+
+.logo {
+    font-size: 40px;
+}
+
+.Maintext {
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 84px;
+
+}
+
+.Secondarytext {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.Tertiarytext {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    width: 70%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media (max-width: 768px) {
+    .Main {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+}.MyImg {
+    width: 546px;
+    height: 743px;
+}
+
+.page-container {
+    padding: 0 142px;
+}
+
+.Categories {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.textside {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.icon-image{
+    animation: move1 2s 2s;
+}
+
+.icon-image :hover{
+    cursor: pointer;
+    transition: 0.9s;
+}
+
+@keyframes move1{
+    from {
+        transform: translateY(300px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.Main :hover{
+    color: purple;
+    cursor: pointer;
+    transition: all 0.9s;
+    animation: move2 5s;
+}
+
+@keyframes move2{
+    from {
+        color: purple;
+    }
+    to {
+        color: rgb(210, 173, 64);
+    }
+}
+
+label {
+    background-color: gainsboro;
+    display: block;
+    width: 80px;
+    height: 30px;
+    position: relative;
+    border-radius: 20px;
+    padding: 2px;
+}
+
+label img{
+    width: 27px;
+    position: absolute;
+    z-index: 99;
+    top: 3px;
+    transition: all 3s;
+}
+
+#sun {
+    left: 50px;
+}
+
+#mode {
+    visibility: hidden;
+}
+
+#mode:checked + label {
+    background-color: gray;
+}
+
+#mode:checked + label::after {
+    background-color: orange;
+    left: 48px;
+}
+
+label::after{
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-color: grey;
+    position: absolute;
+    border-radius: 20px;
+}
