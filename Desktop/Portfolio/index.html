@@ -6,13 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="Home.js">
 </head>
 <body>
     <div class="page-container">
+        <div class="page-layout">
+
 <header> 
-    <div class="logo">Rithik</div>
-    <ul>
-        <li>
+    <nav>
+        <div class="logo">Rithik</div>
+        <div id="burger" class="burger">
+            <img src="./Icons/Burger.png">
+    
+        </div>
             <div class="mode">
                 <input type="checkbox" id="mode">
                 <label for="mode">
@@ -20,17 +26,21 @@
                     <img id="sun" src="Icons/Sun.svg">
                 </label>
             </div>
-        </li>
+      
     <ul class="Categories">
         <li><a href="./index.html">Home</a></li>
         <li><a href="./About.html">About</a></li>
         <li><a href="./Work.html">Experience</a></li>
         <li><a href="./ContactUs.html">Contact</a></li>
     </ul>
-    
-    </ul>
-</header>
+    <div id="close-svg">
+        <img src="Close.png">
+    </div>
 
+</nav>
+   
+</header>
+</div>
 <main class="Main">
     <div class="textside">
         <p class="Maintext"> Hey, I'm Rithik Jalali</p>
